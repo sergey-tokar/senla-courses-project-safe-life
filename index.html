@@ -10,13 +10,13 @@
     <header>
         <nav class="header-navigation">
             <div class="header-navigation__links-block header-navigation__links-block--left">
-                <a class="header-navigation__link" href="#">Как помочь</a>
-                <a class="header-navigation__link" href="#">Подопечные животные</a>
+                <a class="header-navigation__link" href="#how-to-help">Как помочь</a>
+                <a class="header-navigation__link" href="#our-pets">Подопечные животные</a>
             </div>
 
             <div class="header-navigation__links-block header-navigation__links-block--center">
-                <a class="header-navigation__link" href="#">О нас</a>
-                <a class="header-navigation__link" href="#">Контакты</a>
+                <a class="header-navigation__link" href="#about-us">О нас</a>
+                <a class="header-navigation__link" href="#contacts">Контакты</a>
             </div>
 
             <div class="header-navigation__links-block header-navigation__links-block--right">
@@ -59,28 +59,33 @@
             </article>
         </section>
 
-        <section class="how-to-help">
+        <section class="how-to-help" id="how-to-help">
             <h3 class="how-to-help__head">Как помочь?</h3>
             <ul class="how-to-help__list">
                 <li class="how-to-help__item">
+                    <img src="/src/icons/home-for-pets-icon.png">
                     <a class="how-to-help__link" href="#">Дать хвостику дом или взять на передержку</a>
                 </li>
                 <li class="how-to-help__item">
+                    <img src="/src/icons/financial-help-icon.png">
                     <a class="how-to-help__link" href="#">Перечислить деньги в фонд помощи</a>
                 </li>
                 <li class="how-to-help__item">
+                    <img src="/src/icons/help-with-things-icon.png">
                     <a class="how-to-help__link" href="#">Привезти корм, лекарства или другие вещи</a>
                 </li>
                 <li class="how-to-help__item">
+                    <img src="/src/icons/auto-help-icon.png">
                     <a class="how-to-help__link" href="#">Доставить животным еду или отвезти в больницу</a>
                 </li>
                 <li class="how-to-help__item">
+                    <img src="/src/icons/volunteering-help-icon.png">
                     <a class="how-to-help__link" href="#">Выгуливать, кормить, мыть или лечить хвостиков</a>
                 </li>
             </ul>
         </section>
 
-        <section class="home-for-pets">
+        <section class="home-for-pets" id="home-for-pets">
             <article class="how-to-help-block home">
                 <h2 class="how-to-help-block__head">Дом и любовь для хвостика</h2>
                 <p class="how-to-help__text">Самая большая помощь - это спасти жизнь животному, забрать домой, или
@@ -96,8 +101,8 @@
                 </p>
             </article>
 
-            <section class="our-pets">
-                <a class="our-pets__link-to-see-all" href="#">Посмотреть всех (157)</a>
+            <section class="our-pets" id="our-pets">
+                <a class="our-pets__link-to-see-all" href="all-our-pets.html">Посмотреть всех (157)</a>
 
                 <div class="our-pets__slider pets-slider">
                     <div class="pets-slider__cards-list">
@@ -105,7 +110,7 @@
                             <li class="pets-slider__item">
                                 <div class="pets-slider__pet-card pet-card">
                                     <a class="pet-card__photo" href="#">
-                                        <img src="" alt="">
+                                        <img src="src/pictures/example-pet-photo.jpg" alt="example-pet-photo">
                                     </a>
                                     <p class="pet-card__name">Имя</p>
                                     <p class="pet-card__short-description">Пол, возраст</p>
@@ -115,7 +120,7 @@
                             <li class="pets-slider__item">
                                 <div class="pets-slider__pet-card pet-card">
                                     <a class="pet-card__photo" href="#">
-                                        <img src="" alt="">
+                                        <img src="src/pictures/example-pet-photo.jpg" alt="example-pet-photo">
                                     </a>
                                     <p class="pet-card__name">Имя</p>
                                     <p class="pet-card__short-description">Пол, возраст</p>
@@ -125,7 +130,7 @@
                             <li class="pets-slider__item">
                                 <div class="pets-slider__pet-card pet-card">
                                     <a class="pet-card__photo" href="#">
-                                        <img src="" alt="">
+                                        <img src="src/pictures/example-pet-photo.jpg" alt="example-pet-photo">
                                     </a>
                                     <p class="pet-card__name">Имя</p>
                                     <p class="pet-card__short-description">Пол, возраст</p>
@@ -161,7 +166,7 @@
             </section>
         </section>
 
-        <section class="financial-help">
+        <section class="financial-help" id="financial-help">
             <article class="how-to-help-block financial">
                 <h2 class="how-to-help-block__head">Финансовая поддержка</h2>
                 <p class="how-to-help__text"> Такая помощь необходима для оплаты стерилизации, прививок, лечения больных
@@ -205,7 +210,7 @@
             </div>
         </section>
 
-        <section class="help-with-things">
+        <section class="help-with-things" id="help-with-things">
             <article class="how-to-help-block feed">
                 <h2 class="how-to-help-block__head">Корма</h2>
                 <p class="how-to-help__text">Можно помочь с покупкой и доставкой еды для хвостатых:</p>
@@ -219,7 +224,7 @@
             </article>
 
             <article class="how-to-help-block medicines">
-                <h2 class="how-to-help-block__head">Корма</h2>
+                <h2 class="how-to-help-block__head">Лекарства</h2>
                 <p class="how-to-help__text">Нам необходимы препараты: цефтриаксон (флакон по 0,5 г); новокаин (раствор
                     для инъекций); гискан; гамавит; катозал; антитокс фоспренил; энтеросгель (паста); препараты от
                     глистов, блох, клещей, для заживления ран.</p>
@@ -243,7 +248,7 @@
             <a class="help-with-things__adress-link" href="#">Кому и куда передать?</a>
         </section>
 
-        <section class="auto-help">
+        <section class="auto-help" id="auto-help">
             <article class="how-to-help-block delivery">
                 <h2 class="how-to-help-block__head">Автопомощь</h2>
                 <p class="how-to-help__text">Важной помощью будет транспортировка. Необходимо отвозить животных в
@@ -253,7 +258,7 @@
             </article>
         </section>
 
-        <section class="volunteering-help">
+        <section class="volunteering-help" id="volunteering-help">
             <article class="how-to-help-block volunteering">
                 <h2 class="how-to-help-block__head">Волонтерство</h2>
                 <p class="how-to-help__text">Катастрофически не хватает добрых людей, которые готовы поделиться своим
@@ -289,13 +294,13 @@
 
         </section>
 
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <h2 class="about-us__head">О нас</h2>
             <p class="about-us_text">Мы - благотворительное общественное объединение защиты животных «СПАСИ ЖИЗНЬ». Цель
                 нашей деятельности: помощь бездомным животным, оказавшимся в Пункте отлова и временного содержания
                 безнадзорных животных г.Гродно.</p>
 
-            <article class="about-us__contacts contacts">
+            <article class="about-us__contacts contacts" id="contacts">
                 <h3 class="contacts__head">Контакты</h3>
                 <p class="contacts__text">Если Вы хотите приютить одного из этих четвероногих или оказать какую-либо
                     помощь, звоните волонтёрам:</p>
@@ -325,16 +330,16 @@
     <footer>
         <nav class="footer-navigation">
             <div class="footer-navigation__links-block footer-navigation__links-block--left">
-                <a class="footer-navigation__link" href="#">Дом или передержка</a>
-                <a class="footer-navigation__link" href="#">Финансовая поддержка</a>
-                <a class="footer-navigation__link" href="#">Корма, лекарства и другие вещи</a>
-                <a class="footer-navigation__link" href="#">Автопомощь</a>
-                <a class="footer-navigation__link" href="#">Волонтерство</a>
+                <a class="footer-navigation__link" href="#home-for-pets">Дом или передержка</a>
+                <a class="footer-navigation__link" href="#financial-help">Финансовая поддержка</a>
+                <a class="footer-navigation__link" href="#help-with-things">Корма, лекарства и другие вещи</a>
+                <a class="footer-navigation__link" href="#auto-help">Автопомощь</a>
+                <a class="footer-navigation__link" href="#volunteering-help">Волонтерство</a>
             </div>
 
             <div class="footer-navigation__links-block footer-navigation__links-block--right">
-                <a class="footer-navigation__link" href="#">О нас</a>
-                <a class="footer-navigation__link" href="#">Контакты</a>
+                <a class="footer-navigation__link" href="#about-us">О нас</a>
+                <a class="footer-navigation__link" href="#contacts">Контакты</a>
             </div>
         </nav>
         <p class="copyright">&copy; 2020 БООЗЖ "СПАСИ ЖИЗНЬ"</p>
