@@ -40,10 +40,48 @@
 
 body {
     font-family: 'Gilroy', 'Arial', serif;
+    font-size: 16px;
+    color: #242424;
 }
 
-.content {
-    max-width: 1050px;
+header {
+    background: #E5E5E5;
+}
+
+.header-content-wrapper {
+    display: block;
+    position: relative;
+    height: 834px;
+    padding-top: 39px;
+    background: url(/assets/images/header-background-yellow-with-dog.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: inherit;
+}
+
+.header-background-cat {
+    display: block;
+    width: 483px;
+    height: 469px;
+    position: absolute;
+    bottom: -12%;
+    right: 15%;
+    background-image: url('/assets/images/header-background-cat.png');
+}
+
+.header-bacground-text {
+    display: block;
+    height: 404px;
+    width: 772px;
+    position: absolute;
+    background-image: url('/assets/images/header-background-i-wiil-be-best-friend.png');
+    background-repeat: no-repeat;
+    bottom: 10.5%;
+    left: -10%;
+}
+
+.content-wrapper {
+    max-width: 1146px;
     margin: 0 auto;
 }
 
@@ -51,4 +89,246 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header-navigation__links-block--right {
+    margin-right: 97px;
+}
+
+.header-navigation__link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #242424;
+}
+
+.header-navigation__link:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.social-network-icon {
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-network-icon--instagram-white {
+    background-image: url('/assets/images/icons/Instagram-icon-white.svg');
+}
+
+.social-network-icon--vk-white {
+    background-image: url('/assets/images/icons/VK-icon-white.svg');
+}
+
+.header-text {
+    position: relative;
+    max-width: 600px;
+    margin-top: 91px;
+    z-index: 2;
+}
+
+.header-text__head {
+    font-size: 4.5rem;
+    margin: 0;
+    line-height: 77px;
+}
+
+.header-text__description-organization {
+    font-weight: 300;
+    margin: 0;
+    color: #6B6B6B;
+}
+
+.header-text__main-goal {
+    font-weight: 600;
+}
+
+.header-text__problem {
+    max-width: 428px;
+    margin: 43px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #C78100;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    border-radius: 58px;
+    padding: 0 32px;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 3;
+}
+
+header .button {
+    position: relative;
+    z-index: 3;
+}
+
+.button--painted {
+    border: none;
+    background-color: #FBC832;
+}
+
+.button--painted:hover:enabled {
+    background-color: #FFDF86;
+    box-shadow: 0px 2px 4px #CCCCCC;
+}
+
+.button--painted:active:enabled {
+    background-color: #FFBB0C;
+}
+
+.button--painted:disabled {
+    background-color: #FFE28E;
+    color: #6B6B6B;
+}
+
+.button--framed {
+    background: none;
+    border: 2px solid #FFC41E;
+}
+
+.button--framed:hover:enabled {
+    background-color: #FFFFFF;
+    border: 3px solid #FFBC00;
+    box-shadow: 0px 2px 4px #CCCCCC;
+}
+
+.button--framed:active:enabled {
+    background-color: rgba(255, 196, 30, 0.2);
+    border: 3px solid #FFBC00;
+}
+
+.button--framed:disabled {
+    border: 2px solid #B3B3B3;
+    color: #6B6B6B;
+}
+
+.about-project {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.animals-pictures {
+    margin-top: 55px;
+    margin-bottom: 75px;
+}
+
+.animals-pictures__wrapper {
+    position: relative;
+    height: 521px;
+    width: 44vw;
+    border-top-right-radius: calc(521px/2);
+    border-bottom-right-radius: calc(521px/2);
+    background-color: #FAC832;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-wrapper--primary {
+    position: absolute;
+    height: 464px;
+    width: 464px;
+    top: 29px;
+    right: 29px;
+}
+
+.image-wrapper--secondary {
+    position: absolute;
+    height: 245px;
+    width: 245px;
+    border: 9px solid #FAC832;
+    box-sizing: border-box;
+    bottom: -20px;
+    right: -29px;
+}
+
+.about-project__block {
+    margin-top: 128px;
+    margin-left: 94px;
+    max-width: 466px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.about-project__head {
+    color: #C78100;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about-project__text {
+    margin-top: 1.25em;
+    line-height: 140%;
+}
+
+.how-to-help {
+    background-color: #E5E5E5;
+}
+
+.how-to-help__head {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.how-to-help__wrapper {
+    padding: 80px 0;
+}
+
+.how-to-help__list {
+    max-width: 1130px;
+    margin: 47px auto 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.link-card {
+    display: block;
+    text-decoration: none;
+    color: #474747;
+    max-width: 166px;
+    text-align: center;
+}
+
+.link-card__icon-wrapper {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #FFC41E;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-card__icon-wrapper:hover {
+    background: white;
+    box-shadow: 0px 2px 4px #CCCCCC;
+}
+
+.link-card__icon-wrapper:active {
+    background: #F8ECCB;
+}
+
+.link-card__head {
+    margin-top: 1.5em;
+    font-weight: 500;
+    line-height: 140%;
+    color: #474747;
 }

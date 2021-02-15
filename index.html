@@ -9,45 +9,58 @@
 
 <body>
     <header>
-        <div class="header-navigation__content content">
-            <nav class="header-navigation">
+        <div class="header-content-wrapper content-wrapper">
+            <div class="header-navigation__content">
+                <nav class="header-navigation">
 
-                <div class="header-navigation__links-block header-navigation__links-block--left">
-                    <a class="header-navigation__link" href="#how-to-help">Как помочь</a>
-                    <a class="header-navigation__link" href="#our-pets">Подопечные животные</a>
-                </div>
+                    <div class="header-navigation__links-block header-navigation__links-block--left">
+                        <a class="header-navigation__link" href="#how-to-help">Как помочь</a>
+                        <a class="header-navigation__link" href="#our-pets">Подопечные животные</a>
+                    </div>
 
-                <div class="header-navigation__links-block header-navigation__links-block--center">
-                    <a class="header-navigation__link" href="#about-us">О нас</a>
-                    <a class="header-navigation__link" href="#contacts">Контакты</a>
-                </div>
+                    <div class="header-navigation__links-block header-navigation__links-block--center">
+                        <a class="header-navigation__link" href="#about-us">О нас</a>
+                        <a class="header-navigation__link" href="#contacts">Контакты</a>
+                    </div>
 
-                <div class="header-navigation__links-block header-navigation__links-block--right">
-                    <a class="header-navigation__link" href="#">
-                        <img src="" alt="">
-                    </a>
-                    <a class="header-navigation__link" href="#">
-                        <img src="" alt="">
-                    </a>
-                </div>
-            </nav>
+                    <div class="header-navigation__links-block header-navigation__links-block--right">
+                        <a class="header-navigation__link social-network-icon social-network-icon--vk-white" href="https://vk.com/animalsgrodno"></a>
+                        <a class="header-navigation__link social-network-icon social-network-icon--instagram-white" href="https://www.instagram.com/animalsgrodno/"></a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="header-text">
+                <h1 class="header-text__head">СПАСИ ЖИЗНЬ</h1>
+                <p class="header-text__description-organization">Благотворительное общественное объединение защиты животных
+                </p>
+                <p class="header-text__main-goal">Наша цель: помощь бездомным животным. Мы&nbsp;поддерживаем хвостиков, которые оказались в&nbsp;пункте отлова и&nbsp;временного содержания в&nbsp;Гродно. </p>
+                <p class="header-text__problem">У&nbsp;животных, находящихся в&nbsp;пункте отлова и&nbsp;временного содержания бродячих животных, есть всего несколько дней до&nbsp;усыпления...</p>
+            </div>
+
+
+
+            <button class="button button--painted">Хочу помочь</button>
+
+            <div class="header-background-cat"></div>
+            <div class="header-bacground-text"></div>
         </div>
 
-        <div class="header-text">
-            <h1 class="header-text__head">СПАСИ ЖИЗНЬ</h1>
-            <p class="header-text__description-organization">Благотворительное общественное объединение защиты животных
-            </p>
-            <p class="header-text__main-goal">Наша цель: помощь бездомным животным. Мы поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно. </p>
-            <p class="header-text__problem">У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
-        </div>
-
-        <button class="button--painted">Действие</button>
 
     </header>
 
     <main>
         <section class="about-project">
-            <img class="about-project__picture" src="" alt="">
+            <div class="animals-pictures">
+                <div class="animals-pictures__wrapper">
+                    <div class="image-wrapper image-wrapper--primary">
+                        <img class="image-wrapper__image" src="/assets/images/dog-in-cell.jpg" alt="Грустная собака в клетке">
+                    </div>
+                    <div class="image-wrapper image-wrapper--secondary">
+                        <img class="image-wrapper__image" src="/assets/images/cat-in-cell.jpg" alt="Грустный кот в клетке">
+                    </div>
+                </div>
+            </div>
 
             <article class="about-project__block">
                 <h2 class="about-project__head">Тут большие добрые сердца помогают жить маленьким сердечкам</h2>
@@ -60,29 +73,52 @@
         </section>
 
         <section class="how-to-help" id="how-to-help">
-            <h3 class="how-to-help__head">Как помочь?</h3>
-            <ul class="how-to-help__list">
-                <li class="how-to-help__item">
-                    <img src="/assets/images/icons/home-for-pets-icon.png">
-                    <a class="how-to-help__link" href="#">Дать хвостику дом или взять на передержку</a>
-                </li>
-                <li class="how-to-help__item">
-                    <img src="/assets/images/icons/financial-help-icon.png">
-                    <a class="how-to-help__link" href="#">Перечислить деньги в фонд помощи</a>
-                </li>
-                <li class="how-to-help__item">
-                    <img src="/assets/images/icons/help-with-things-icon.png">
-                    <a class="how-to-help__link" href="#">Привезти корм, лекарства или другие вещи</a>
-                </li>
-                <li class="how-to-help__item">
-                    <img src="/assets/images/icons/auto-help-icon.png">
-                    <a class="how-to-help__link" href="#">Доставить животным еду или отвезти в больницу</a>
-                </li>
-                <li class="how-to-help__item">
-                    <img src="/assets/images/icons/volunteering-help-icon.png">
-                    <a class="how-to-help__link" href="#">Выгуливать, кормить, мыть или лечить хвостиков</a>
-                </li>
-            </ul>
+            <div class="how-to-help__wrapper">
+                <h2 class="how-to-help__head">Как помочь?</h2>
+                <ul class="how-to-help__list">
+                    <li class="how-to-help__item">
+                        <a class="how-to-help__link link-card" href="#home-for-pets">
+                            <div class="link-card__icon-wrapper">
+                                <img class="link-card__icon" src="/assets/images/icons/home-for-pets-icon.png" alt="Иконка собачка в домике">
+                            </div>
+                            <p class="link-card__head">Дать хвостику дом или взять на передержку</p>
+                        </a>
+                    </li>
+                    <li class="how-to-help__item link-card">
+                        <a class="how-to-help__link link-card" href="#financial-help">
+                            <div class="link-card__icon-wrapper">
+                                <img class="link-card__icon" src="/assets/images/icons/financial-help-icon.png" alt="Иконка ладонь с карточкой">
+                            </div>
+                            <p class="link-card__head">Перечислить деньги в фонд помощи</p>
+                        </a>
+                    </li>
+                    <li class="how-to-help__item link-card">
+                        <a class="how-to-help__link link-card" href="#help-with-things">
+                            <div class="link-card__icon-wrapper">
+                                <img class="link-card__icon" src="/assets/images/icons/help-with-things-icon.png" alt="Иконка собачка с миской и знаком медецинской помощи">
+                            </div>
+                            <p class="link-card__head">Привезти корм, лекарства или другие вещи</p>
+                        </a>
+                    </li>
+                    <li class="how-to-help__item link-card">
+                        <a class="how-to-help__link link-card" href="#auto-help">
+                            <div class="link-card__icon-wrapper">
+                                <img class="link-card__icon" src="/assets/images/icons/auto-help-icon.png" alt="Иконка собачка в машине">
+                            </div>
+                            <p class="link-card__head">Доставить животным еду или отвезти в больницу</p>
+                        </a>
+                    </li>
+                    <li class="how-to-help__item link-card">
+                        <a class="how-to-help__link link-card" href="#volunteering-help">
+                            <div class="link-card__icon-wrapper">
+                                <img class="link-card__icon" src="/assets/images/icons/volunteering-help-icon.png" alt="Иконка ладонь с значком следа">
+                            </div>
+                            <p class="link-card__head">Выгуливать, кормить, мыть или лечить хвостиков</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </section>
 
         <section class="home-for-pets" id="home-for-pets">
@@ -145,8 +181,8 @@
                             <img src="" alt="">
                         </button>
 
-                        <button class="button--painted">Забрать домой</button>
-                        <button class="button--framed">Забрать на передержку</button>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
                     </div>
                 </div>
 
@@ -255,7 +291,7 @@
                     Главное условие - это Ваше совершеннолетие и любовь к животным!</p>
                 <p class="how-to-help__text">Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.
                 </p>
-                <button class="button--painted">Оставить заявку</button>
+                <button class="button button--painted">Оставить заявку</button>
             </article>
         </section>
 
@@ -295,11 +331,12 @@
                 <p class="social-networks__text">Связаться с нами можно написав в соц. сетях.</p>
                 <div class="social-networks__links">
                     <a class="social-networks__link" href="">
-                        <img src="" alt="">
-                    </a>
-                    <a class="social-networks__link" href="">
-                        <img src="" alt="">
-                    </a>
+                        <a class="social-networks__link" href="https://vk.com/animalsgrodno ">
+                            <img src="" alt="">
+                        </a>
+                        <a class="social-networks__link" href="https://www.instagram.com/animalsgrodno/">
+                            <img src="" alt="">
+                        </a>
                 </div>
             </article>
         </section>
