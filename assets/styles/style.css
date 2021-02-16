@@ -38,14 +38,26 @@
     src: url('/assets/fonts/gilroy-bold.woff2') format('woff2'), url('/assets/fonts/gilroy-bold.woff') format('woff');
 }
 
+*:focus-visible {
+    outline: 2px solid #6B6B6B;
+}
+
 body {
     font-family: 'Gilroy', 'Arial', serif;
     font-size: 16px;
     color: #242424;
 }
 
-header {
-    background: #E5E5E5;
+header,
+.how-to-help,
+.home-for-pets,
+.our-pets,
+.help-with-things,
+.auto-help,
+.volunteering-help,
+.about-us,
+footer {
+    background: #F6F6F6;
 }
 
 .header-content-wrapper {
@@ -105,14 +117,67 @@ header {
     margin-right: 30px;
 }
 
+.header-navigation__link:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.header-navigation__link:active {
+    color: #B3B3B3;
+}
+
+.header-navigation__link:disabled {
+    color: #6B6B6B;
+}
+
 .social-network-icon {
     display: inline-block;
     width: 49px;
     height: 49px;
-    border: 2px solid white;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    box-sizing: border-box;
+}
+
+.social-network-icon:focus-visible {
+    border: 3px solid #6B6B6B;
+    outline: none;
+}
+
+.social-network-icon--main-color {
+    border: 2px solid #FFC41E;
+}
+
+.social-network-icon--main-color:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px #CCCCCC;
+}
+
+.social-network-icon--main-color:active {
+    background-color: #F8ECCB;
+}
+
+.social-network-icon--vk-main-color {
+    background-image: url('/assets/images/icons/VK-icon-main-color.svg');
+}
+
+.social-network-icon--instagram-main-color {
+    background-image: url('/assets/images/icons/Instagram-icon-main-color.svg');
+}
+
+.social-network-icon--white {
+    border: 2px solid white;
+}
+
+.social-network-icon--white:hover {
+    background-color: #FFD458;
+    box-shadow: 0px 4px 4px rgba(113, 113, 113, 0.2);
+}
+
+.social-network-icon--white:active {
+    border: 2px solid white;
+    background-color: #FFBC00;
 }
 
 .social-network-icon--instagram-white {
@@ -155,15 +220,18 @@ header {
 }
 
 .button {
+    height: 42px;
     font-weight: 500;
     font-size: 1.25rem;
-    line-height: 2.5rem;
     border-radius: 58px;
     padding: 0 32px;
-    outline: none;
     box-sizing: border-box;
     cursor: pointer;
-    z-index: 3;
+    outline: none;
+}
+
+.button:focus-visible {
+    border: 3px solid #6B6B6B;
 }
 
 header .button {
@@ -181,7 +249,7 @@ header .button {
     box-shadow: 0px 2px 4px #CCCCCC;
 }
 
-.button--painted:active:enabled {
+.button--painted:active:focus:enabled {
     background-color: #FFBB0C;
 }
 
@@ -259,9 +327,10 @@ header .button {
     max-width: 466px;
 }
 
-h2 {
+.how-to-help-block__head {
     font-weight: 600;
     font-size: 1.75rem;
+    margin: 0;
 }
 
 .about-project__head {
@@ -275,14 +344,11 @@ h2 {
     line-height: 140%;
 }
 
-.how-to-help {
-    background-color: #E5E5E5;
-}
-
-.how-to-help__head {
+.head-light {
     font-weight: 300;
     text-align: center;
     font-size: 1.75rem;
+    margin: 0;
 }
 
 .how-to-help__wrapper {
@@ -305,6 +371,8 @@ h2 {
     color: #474747;
     max-width: 166px;
     text-align: center;
+    outline: none;
+    box-sizing: border-box;
 }
 
 .link-card__icon-wrapper {
@@ -315,6 +383,7 @@ h2 {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .link-card__icon-wrapper:hover {
@@ -326,9 +395,269 @@ h2 {
     background: #F8ECCB;
 }
 
+.link-card:focus-visible>.link-card__icon-wrapper {
+    border: 3px solid #6B6B6B;
+    box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+}
+
 .link-card__head {
     margin-top: 1.5em;
     font-weight: 500;
     line-height: 140%;
     color: #474747;
+}
+
+.how-to-help-block__head-icon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how-to-help-block__head-icon {
+    height: 126px;
+}
+
+.home-for-pets .how-to-help-block__head-icon {
+    height: 140px;
+}
+
+.how-to-help-block__band {
+    height: 1px;
+    width: 807px;
+    border-bottom: 1px solid #EEBF3A;
+}
+
+.home-for-pets__wrapper {
+    max-width: 875px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 69px 0 72px;
+}
+
+.home,
+.temporary-home {
+    max-width: 389px;
+}
+
+.how-to-help__text {
+    line-height: 140%;
+    margin: 1.5em 0 0 0;
+}
+
+.home-for-pets .how-to-help__text {
+    margin-top: 1.25em;
+}
+
+.our-pets-card-list {
+    max-width: 1145px;
+    margin: 32px auto 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 368px);
+    list-style: none;
+    justify-content: space-between;
+    row-gap: 44px;
+}
+
+.pet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 368px;
+    height: 695px;
+    background-color: #FFFFFF;
+    padding: 16px 16px 20px 17px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #D6D6D6;
+}
+
+.pet-card__photo {
+    max-width: 335px;
+    max-height: 356px;
+}
+
+.pet-card__name {
+    font-size: 1.375rem;
+    font-weight: 500;
+    width: 335px;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+}
+
+.pet-card__divider {
+    width: 335px;
+    margin: 10px 0 8px;
+    border-top: 1px solid rgba(214, 214, 214, 0.5);
+}
+
+.pet-card__short-description {
+    width: 335px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6B6B6B;
+    margin: 0;
+}
+
+.pet-card__full-description {
+    width: 335px;
+    height: 95px;
+    margin: 6px 0 0 0;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.pet-card .button {
+    margin-top: auto;
+}
+
+.pet-card .button:last-of-type {
+    margin-top: 17px;
+}
+
+.our-pets__link-to-see-all {
+    display: block;
+    width: 244px;
+    margin: 20px auto 65px;
+}
+
+.text-link {
+    font-size: 1.25rem;
+    line-height: 2em;
+    font-weight: 500;
+    color: #AD7F00;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.text-link:hover {
+    color: #523C00;
+}
+
+.text-link:active {
+    color: #F6B400;
+}
+
+.our-pets__repost {
+    width: 751px;
+    margin: 0 auto;
+    padding-bottom: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repost__description {
+    width: 583px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+.social-network-icons {
+    width: 135px;
+    margin-left: 38px;
+}
+
+.social-network-icon--instagram-main-color {
+    margin-left: 32px;
+}
+
+.financial-help {
+    padding: 46px 0 56px;
+}
+
+.financial-help__wrapper {
+    width: 875px;
+    margin: 0 auto;
+}
+
+.financial {
+    padding-top: 57px;
+    text-align: center;
+}
+
+.financial .how-to-help__text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+    color: #6B6B6B;
+}
+
+.financial-help__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.financial-help__article {
+    max-width: 389px;
+}
+
+.financial-help__article .head-light {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.requisites-block__requisites,
+.boxes-block__locations-list,
+.boxes-block__text {
+    margin: 0;
+}
+
+.requisites-block__requisites,
+.boxes-block__locations-list {
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.boxes-block__locations-list {
+    padding-left: 15px;
+}
+
+.boxes-block__map-link {
+    line-height: 100%;
+}
+
+.help-with-things {
+    padding: 49px 0 78px;
+}
+
+.help-with-things__wrapper {
+    max-width: 678px;
+    margin: 53px auto 0;
+}
+
+.medicines,
+.other-things {
+    margin-top: 40px;
+}
+
+.feed-list,
+.feed-cook,
+.other-things-list {
+    margin: 0;
+}
+
+.feed-list,
+.other-things-list {
+    padding-left: 16px;
+}
+
+.help-with-things__adress-link {
+    display: block;
+    margin-top: 24px;
+}
+
+.delivery {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.delivery__text {
+    margin-bottom: 24px;
+}
+
+.auto-help {
+    padding-bottom: 82px;
 }
