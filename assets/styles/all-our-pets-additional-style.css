@@ -1,0 +1,95 @@
+/* Additional styles for all-our-pets page */
+
+header {
+    padding: 43px 0 40px;
+}
+
+.header-wrapper {
+    max-width: 1145px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper p,
+.header-wrapper h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.back-to-main-page {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #6B6B6B;
+}
+
+.back-to-main-page__icon-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: linear-gradient(155.32deg, #FFD868 13.8%, #F3B401 90.56%);
+    box-shadow: 2px 2px 4px rgba(206, 206, 206, 0.25);
+}
+
+.back-to-main-page__text {
+    margin-left: 8px;
+}
+
+.back-to-main-page:hover>.back-to-main-page__icon-wrapper {
+    background: linear-gradient(155.32deg, #FFEAAF 13.8%, #F3B401 51.37%, #E2A700 87.76%);
+}
+
+.back-to-main-page:hover {
+    color: #242424;
+}
+
+.back-to-main-page:active>.back-to-main-page__icon-wrapper {
+    background: linear-gradient(155.32deg, #E2A700 13.8%, #F3B401 51.37%, #FFEAAF 90.56%);
+}
+
+.back-to-main-page:active {
+    color: #6B6B6B;
+}
+
+.head {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+}
+
+.choose-pet-category__text,
+.choose-pet-category__list {
+    display: inline-block;
+}
+
+.choose-pet-category__text {
+    font-size: 16px;
+    line-height: 140%;
+    color: #6B6B6B;
+}
+
+.choose-pet-category__list {
+    height: 40px;
+    width: 168px;
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    appearance: none;
+    background-image: url('/assets/images/icons/down-pointer-for-select.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-x: 138px;
+}
+
+.our-pets-card-list {
+    margin: 0 auto;
+}
