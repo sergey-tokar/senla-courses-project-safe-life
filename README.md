@@ -11,6 +11,8 @@ Project about save homeless pets.
 **netlify repository**
 [https://save-life-sergeytokar-senlacourses.netlify.app](https://save-life-sergeytokar-senlacourses.netlify.app)
 
+## Passed trainers
+
 **htmlacademy**
 [https://htmlacademy.ru/profile/id1684235](https://htmlacademy.ru/profile/id1684235)
 
