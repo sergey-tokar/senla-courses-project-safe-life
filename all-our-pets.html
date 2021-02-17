@@ -5,157 +5,204 @@
     <title>Наши подопечные</title>
     <link rel="stylesheet" href="/assets/styles/normalize.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/all-our-pets-additional-style.css">
 </head>
 
 <body>
     <header>
-        <div class="back-to-main-page">
-            <a href="index.html">
-                <img src="" alt="">
+        <div class="header-wrapper">
+            <a class="back-to-main-page" href="index.html">
+                <div class="back-to-main-page__icon-wrapper">
+                    <img class="back-to-main-page__icon" src="/assets/images/icons/left-pointer-white.svg" alt="Стрелка влево (назад)">
+                </div>
+                <p class="back-to-main-page__text">Вернуться назад</p>
             </a>
-            <a href="index.html">Вернуться назад</a>
-        </div>
-        <h1 class="head">Наши подопечные</h1>
 
-        <form class="choose-pet-category" action="">
-            <p class="choose-pet-category__text">Показать</p>
-            <select class="choose-pet-category__list" name="" id="" size="1">
-                <option selected value="1">Коты и собаки</option>
-                <option value="2">Коты</option>
-                <option value="3">Собаки</option>
-            </select>
-        </form>
+            <h1 class="head">Наши подопечные</h1>
+
+            <form class="choose-pet-category" action="">
+                <p class="choose-pet-category__text">Показать</p>
+                <select class="choose-pet-category__list" name="" id="" size="1">
+                    <option selected value="1">Коты и собаки</option>
+                    <option value="2">Коты</option>
+                    <option value="3">Собаки</option>
+                </select>
+            </form>
+        </div>
+
     </header>
 
     <main>
-        <div class="our-pets-cards">
+        <section class="our-pets" id="our-pets">
+            <ul class="our-pets-card-list">
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Monik.jpg" alt="Щенок Моник">
+                        <p class="pet-card__name">Моник</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Мальчик, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">К&nbsp;поводку приучен. Не&nbsp;агрессивный. В&nbsp;еде не&nbsp;привередничает. С&nbsp;другими животными не&nbsp;конфликтует. Привит. Очень плачет и&nbsp;хочет на&nbsp;ручки. Отдается только в&nbsp;добрые руки и&nbsp;под паспорт.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="assets/pictures/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Lunatik.jpg" alt="Котенок Лунатик">
+                        <p class="pet-card__name">Лунатик</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Девочка, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">Она не&nbsp;знает, что такое&nbsp;&mdash; царапаться и&nbsp;кусаться, она не&nbsp;знает, что такое нападать на&nbsp;других животных.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="/assets/images/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Gerda.jpg" alt="Собака Герда">
+                        <p class="pet-card__name">Герда</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Девочка, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">К&nbsp;поводку приучен. Не&nbsp;агрессивный. В&nbsp;еде не&nbsp;привередничает. С&nbsp;другими животными не&nbsp;конфликтует. Привит. Очень плачет и&nbsp;хочет на&nbsp;ручки. Отдается только в&nbsp;добрые руки и&nbsp;под паспорт.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="/assets/images/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Saki.jpg" alt="Кот Саки">
+                        <p class="pet-card__name">Саки</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Мальчик, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">Веселый и&nbsp;очень игривый, ему так нужны ваша любовь и&nbsp;ласка.У него потрясающая густая шерсть в&nbsp;полосочку, &laquo;серьезные&raquo; желтые глаза и&nbsp;длиннющие белые усы.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="/assets/images/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Monika.jpg" alt="Собака Моника">
+                        <p class="pet-card__name">Моника</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Девочка, 4&nbsp;месяца</p>
+                        <p class="pet-card__full-description">Девочке 4&nbsp;месяца жила в&nbsp;ужасных условиях, бывшая хозяйка могла исчезнуть на&nbsp;двое суток закрыв её&nbsp;одну в&nbsp;комнате без еды, ей&nbsp;нельзя там больше оставаться. Мила очень ласковая, забавная, в&nbsp;еде не&nbsp;привередлива.
+                        </p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="/assets/images/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Adreantino.jpg" alt="Пес Адреантино">
+                        <p class="pet-card__name">Андреантино</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Мальчик, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">Веселый и&nbsp;очень игривый, ему так нужны ваша любовь и&nbsp;ласка.У него потрясающая густая шерсть в&nbsp;полосочку, &laquo;серьезные&raquo; желтые глаза и&nbsp;длиннющие белые усы.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="/assets/images/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Monik.jpg" alt="Щенок Моник">
+                        <p class="pet-card__name">Моник</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Мальчик, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">К&nbsp;поводку приучен. Не&nbsp;агрессивный. В&nbsp;еде не&nbsp;привередничает. С&nbsp;другими животными не&nbsp;конфликтует. Привит. Очень плачет и&nbsp;хочет на&nbsp;ручки. Отдается только в&nbsp;добрые руки и&nbsp;под паспорт.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="/assets/images/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Lunatik.jpg" alt="Котенок Лунатик">
+                        <p class="pet-card__name">Лунатик</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Девочка, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">Она не&nbsp;знает, что такое&nbsp;&mdash; царапаться и&nbsp;кусаться, она не&nbsp;знает, что такое нападать на&nbsp;других животных.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="/assets/images/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Gerda.jpg" alt="Собака Герда">
+                        <p class="pet-card__name">Герда</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Девочка, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">К&nbsp;поводку приучен. Не&nbsp;агрессивный. В&nbsp;еде не&nbsp;привередничает. С&nbsp;другими животными не&nbsp;конфликтует. Привит. Очень плачет и&nbsp;хочет на&nbsp;ручки. Отдается только в&nbsp;добрые руки и&nbsp;под паспорт.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
 
-            <div class="pet-card">
-                <a class="pet-card__photo" href="#">
-                    <img src="/assets/images/example-pet-photo.jpg" alt="example-pet-photo">
-                </a>
-                <p class="pet-card__name">Имя</p>
-                <p class="pet-card__short-description">Пол, возраст</p>
-                <p class="pet-card__full-description">Полное описание: характер, навыки и т.д.</p>
-                <a class="pet-card__full-information-link" href="#">Подробнее</a>
-                <button class="button--painted">Забрать домой</button>
-                <button class="button--framed">Забрать на передержку</button>
-            </div>
-        </div>
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Saki.jpg" alt="Кот Саки">
+                        <p class="pet-card__name">Саки</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Мальчик, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">Веселый и&nbsp;очень игривый, ему так нужны ваша любовь и&nbsp;ласка.У него потрясающая густая шерсть в&nbsp;полосочку, &laquo;серьезные&raquo; желтые глаза и&nbsp;длиннющие белые усы.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
+
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Monika.jpg" alt="Собака Моника">
+                        <p class="pet-card__name">Моника</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Девочка, 4&nbsp;месяца</p>
+                        <p class="pet-card__full-description">Девочке 4&nbsp;месяца жила в&nbsp;ужасных условиях, бывшая хозяйка могла исчезнуть на&nbsp;двое суток закрыв её&nbsp;одну в&nbsp;комнате без еды, ей&nbsp;нельзя там больше оставаться. Мила очень ласковая, забавная, в&nbsp;еде не&nbsp;привередлива.
+                        </p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
+
+                <li class="our-pets-card-list__item">
+                    <div class="pet-card">
+                        <img class="pet-card__photo" src="/assets/images/pets-photo/Adreantino.jpg" alt="Пес Адреантино">
+                        <p class="pet-card__name">Андреантино</p>
+                        <div class="pet-card__divider"></div>
+                        <p class="pet-card__short-description">Мальчик, 7&nbsp;месяцев</p>
+                        <p class="pet-card__full-description">Веселый и&nbsp;очень игривый, ему так нужны ваша любовь и&nbsp;ласка.У него потрясающая густая шерсть в&nbsp;полосочку, &laquo;серьезные&raquo; желтые глаза и&nbsp;длиннющие белые усы.</p>
+                        <button class="button button--painted">Забрать домой</button>
+                        <button class="button button--framed">Забрать на передержку</button>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <nav class="footer-navigation">
-            <div class="footer-navigation__links-block footer-navigation__links-block--left">
-                <a class="footer-navigation__link" href="#">Дом или передержка</a>
-                <a class="footer-navigation__link" href="#">Финансовая поддержка</a>
-                <a class="footer-navigation__link" href="#">Корма, лекарства и другие вещи</a>
-                <a class="footer-navigation__link" href="#">Автопомощь</a>
-                <a class="footer-navigation__link" href="#">Волонтерство</a>
-            </div>
+        <div class="footer__wrapper">
+            <nav class="footer-navigation">
+                <div class="footer-navigation__links-block footer-navigation__links-block--left">
+                    <a class="footer-navigation__link footer-navigation__link--left" href="#home-for-pets">Дом или передержка</a>
+                    <a class="footer-navigation__link footer-navigation__link--left" href="#financial-help">Финансовая поддержка</a>
+                    <a class="footer-navigation__link footer-navigation__link--left" href="#help-with-things">Корма, лекарства и&nbsp;другие вещи</a>
+                    <a class="footer-navigation__link footer-navigation__link--left" href="#auto-help">Автопомощь</a>
+                    <a class="footer-navigation__link footer-navigation__link--left" href="#volunteering-help">Волонтерство</a>
+                </div>
 
-            <div class="footer-navigation__links-block footer-navigation__links-block--right">
-                <a class="footer-navigation__link" href="#">О нас</a>
-                <a class="footer-navigation__link" href="#">Контакты</a>
-            </div>
-        </nav>
-        <p class="copyright">&copy; 2020 БООЗЖ "СПАСИ ЖИЗНЬ"</p>
+                <div class="footer-navigation__links-block footer-navigation__links-block--right">
+                    <a class="footer-navigation__link footer-navigation__link--right" href="#about-us">О&nbsp;нас</a>
+                    <a class="footer-navigation__link footer-navigation__link--right" href="#contacts">Контакты</a>
+                </div>
+            </nav>
+            <p class="copyright">&copy; 2020&nbsp;БООЗЖ &quot;СПАСИ ЖИЗНЬ"</p>
+        </div>
     </footer>
 </body>
 

@@ -452,6 +452,7 @@ header .button {
 .our-pets-card-list {
     max-width: 1145px;
     margin: 32px auto 0px;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 368px);
     list-style: none;
@@ -660,4 +661,197 @@ header .button {
 
 .auto-help {
     padding-bottom: 82px;
+}
+
+.volunteering-help_wrapper {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.volunteering {
+    max-width: 466px;
+    margin-left: 77px;
+}
+
+.volunteering-help_wrapper .animals-pictures {
+    margin: 0;
+}
+
+.how-to-help__text--second-paragraph {
+    margin: 10px 0 24px;
+}
+
+.news-wrapper {
+    max-width: 778px;
+    margin: 54px auto;
+}
+
+.news__head,
+.about-us__head {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.news-list {
+    margin-bottom: 1.5rem;
+}
+
+.news__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__item:not(:first-of-type) {
+    margin-top: 40px;
+}
+
+.news-text-wrapper {
+    display: inline-block;
+    max-width: 603px;
+}
+
+.news__item-content {
+    margin: 0;
+    line-height: 140%;
+}
+
+.news__item-content:not(:first-of-type) {
+    margin-top: 0.5em;
+}
+
+.about-us {
+    padding: 56px 0 54px;
+}
+
+.about-us_wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.about-us_text {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+}
+
+.contacts__head {
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 26px;
+}
+
+.contacts__text {
+    line-height: 140%;
+    margin: 0;
+}
+
+.contacts__text:not(:first-of-type) {
+    margin-top: 0.5em;
+}
+
+.contacts__social-networks {
+    margin: 40px 0 0 0;
+}
+
+.contacts__social-networks .social-network-icons {
+    margin-left: 0;
+}
+
+.thank-you-for-help {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 741px;
+    margin: 0;
+    background-image: url('/assets/images/background-thank-you-for-help.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1920px auto;
+}
+
+.thank-you-for-help__container {
+    height: 521px;
+    width: 32vw;
+    border-top-right-radius: calc(521px/2);
+    border-bottom-right-radius: calc(521px/2);
+    background-color: #322D1E;
+    mix-blend-mode: soft-light;
+}
+
+.thank-you-for-help__wrapper {
+    position: absolute;
+    left: 8%;
+}
+
+.thank-you-for-help__paw-icon,
+.thank-you-for-help__text {
+    display: inline-block;
+    isolation: isolate;
+}
+
+.thank-you-for-help__text {
+    max-width: 346px;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 77px;
+    color: #FFFFFF;
+}
+
+.footer__wrapper {
+    max-width: 1146px;
+    margin: 0 auto;
+    padding: 40px 0 16px;
+}
+
+.footer-navigation,
+.footer-navigation__links-block {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-navigation__links-block--left {
+    width: 77%;
+}
+
+.footer-navigation__links-block--right {
+    width: 13%;
+}
+
+.footer-navigation__link {
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.footer-navigation__link:hover {
+    color: #AD7F00;
+}
+
+.footer-navigation__link:active {
+    color: #474747;
+}
+
+.footer-navigation__link--left {
+    line-height: 17px;
+    font-weight: 600;
+    color: #474747;
+}
+
+.footer-navigation__link--right {
+    line-height: 16px;
+    color: #242424;
+}
+
+.copyright {
+    max-width: 100%;
+    margin: 24px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 140%;
+    color: #B3B3B3;
 }
